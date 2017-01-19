@@ -178,23 +178,25 @@
         left: 0;
     }
 
-    /*** banner ***/
-    .banner { margin-top: 50px; }
-    .banner-menu-list { margin: 10px 0; }
-    .banner-menu-container {
+    /*** 导航菜单 ***/
+    .nav-menu { margin: 50px 0 0; }
+    .nav-menu-container {
         display: flex;
+        margin: 10px 0 0 !important;
     }
-    .banner-menu-item {
+    .nav-menu-item {
         width: auto;
         padding: 0 5px 10px;
         margin: 0 5px;
         flex-grow: 0;
         flex-shrink: 0;
     }
-    .banner-menu-item > a { color: #666; }
-    .banner-active-menu {
+    .nav-menu-item > a { color: #666; }
+    .nav-active-menu {
         border-bottom: 1px solid #006395;
     }
+
+    /*** banner ***/
     .banner-items-container { margin-top: 20px; }
     .banner-item {
         position: relative;

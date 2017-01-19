@@ -6,7 +6,7 @@
     width: 100%;
     height: 50px;
     background-color: #006395;
-    z-index: 10;
+    z-index: 15;
 }
 .header-arrow {
     width: 15px;
@@ -352,6 +352,7 @@ table, tr, th, td {
     background-position: left 5px center;
     background-repeat: no-repeat;
     background-size: 18px;
+    resize: none;
 }
 .footer-input-container .share {
     background-image: url(img/share.png);
