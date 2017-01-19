@@ -1,0 +1,49 @@
+html, body, header, section, aside, footer, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    font-family: "微软雅黑", Arial, "Microsoft Yahei";
+    font-size: 14px;
+    color: #333333;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    display: block;
+    border: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.lt {
+    float: left;
+}
+.rt {
+    float: right;
+}
+input[type=text] {
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance: none;
+    font-family: arial,"microsoft yahei";
+    font-size: 14px;
+}
+
