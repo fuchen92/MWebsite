@@ -268,28 +268,33 @@
                 </div>
             </div>
         </div>
+        <!-- 导航菜单 -->
+        <div class="nav-menu">
+            <div class="container">
+                <div class="nav-menu-list swiper-container">
+                    <ul class="nav-menu-container swiper-wrapper">
+                        <li class="nav-menu-item nav-active-menu swiper-slide"><a href="javascript:;">首页</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">在线旅游</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">酒店</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">航空公司</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">出入境及目的地</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">投资并购</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销系统</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">商务及奖励旅游</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">邮轮</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">租车</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">机场管理</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">高铁</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">推荐</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- banner -->
         <div class="banner">
             <div class="container">
-                <div class="banner-menu-list swiper-container">
-                    <ul class="banner-menu-container swiper-wrapper">
-                        <li class="banner-menu-item banner-active-menu swiper-slide"><a href="javascript:;">首页</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">在线旅游</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">酒店</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">航空公司</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">出入境及目的地</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">投资并购</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">旅游分销系统</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">商务及奖励旅游</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">邮轮</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">租车</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">机场管理</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">高铁</a></li>
-                        <li class="banner-menu-item swiper-slide"><a href="javascript:;">推荐</a></li>
-                    </ul>
-                </div>
                 <div class="banner-items-container">
                     <div class="banner-item">
                         <img src="css/img/banner.jpg">
@@ -327,7 +332,7 @@
                                     <img src="css/img/news-1.jpg">
                                 </div>
                                 <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
-                                <p class="news-img-intro">2017-1-12</p>                                
+                                <p class="news-img-intro">2017-1-12</p>
                             </li>
                             <li class="swiper-slide carousel-item">
                                 <div class="news-img-container">
@@ -552,7 +557,7 @@
     <script src="js/index.js"></script>
     <script>
         window.onload = function () {
-            var bannerMenu = new Swiper(".banner-menu-list", {
+            var bannerMenu = new Swiper(".nav-menu-list", {
                 initialSlide: 0,
                 spaceBetween: 10,
                 slidesPerView: "auto",
