@@ -36,8 +36,8 @@ $(document).ready(function () {
     //     })
     // });
 
-    $(".banner-menu-item").on("click", function () {
-        switchMenu($(this), "banner-active-menu");
+    $(".nav-menu-item").on("click", function () {
+        switchMenu($(this), "nav-active-menu");
     });
 
     $(".footer-nav-item").on("click", function () {
