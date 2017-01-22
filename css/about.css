@@ -76,7 +76,7 @@
 .product {
     padding: 50px 0;
     background-image: url(img/product-mob-bg.jpg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .slide-title {
@@ -185,6 +185,9 @@
 .footer-link {
     color: #C5C5C5;
     padding: 5px 0;
+}
+.footer-link:active {
+    color: #646363;
 }
 .footer-link b {
     display: inline-block;

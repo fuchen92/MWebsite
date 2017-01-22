@@ -50,6 +50,25 @@
         background-size: 100% 100%;
         cursor: pointer;
     }
+
+    /*** 导航菜单 ***/
+    .nav-menu { margin: 50px 0 0; }
+    .nav-menu-container {
+        display: flex;
+        margin: 10px 0 0 !important;
+    }
+    .nav-menu-item {
+        width: auto;
+        padding: 0 5px 10px;
+        margin: 0 5px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .nav-menu-item > a { color: #666; }
+    .nav-active-menu {
+        border-bottom: 1px solid #006395;
+    }
+
         /* 首页分类，搜索侧边栏页 */
     .siderbar {
         position: fixed;
@@ -178,24 +197,6 @@
         left: 0;
     }
 
-    /*** 导航菜单 ***/
-    .nav-menu { margin: 50px 0 0; }
-    .nav-menu-container {
-        display: flex;
-        margin: 10px 0 0 !important;
-    }
-    .nav-menu-item {
-        width: auto;
-        padding: 0 5px 10px;
-        margin: 0 5px;
-        flex-grow: 0;
-        flex-shrink: 0;
-    }
-    .nav-menu-item > a { color: #666; }
-    .nav-active-menu {
-        border-bottom: 1px solid #006395;
-    }
-
     /*** banner ***/
     .banner-items-container { margin-top: 20px; }
     .banner-item {
@@ -322,6 +323,10 @@
         font-size: 15px;
         line-height: 25px;
     }
+    .tips-container {
+       margin-top: 10px;
+       opacity: 0;
+    }
     .subscribe-input {
         border: none;
         border-bottom: 1px solid #A3A3A3;
@@ -335,7 +340,7 @@
         line-height: 40px;
         border: 1px solid #006395;
         color: #006395;
-        margin: 25px auto 0;
+        margin: 15px auto 0;
         font-size: 15px;
     }
 
@@ -356,6 +361,9 @@
     .footer-link {
         color: #C5C5C5;
         padding: 5px 0;
+    }
+    .footer-link:active {
+        color: #646363;
     }
     .footer-link b {
         display: inline-block;
