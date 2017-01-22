@@ -23,6 +23,31 @@
                 <h3 class="site-name">环球旅讯</h3>
             </div>
         </nav>
+        <!-- 导航菜单 -->
+        <div class="nav-menu">
+            <div class="container">
+                <div class="nav-menu-list swiper-container">
+                    <ul class="nav-menu-container swiper-wrapper">
+                        <li class="nav-menu-item nav-active-menu swiper-slide"><a href="javascript:;">首页</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">在线旅游</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">酒店</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">航空公司</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">出入境及目的地</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">投资并购</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销系统</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">商务及奖励旅游</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">邮轮</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">租车</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">机场管理</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">高铁</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">推荐</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">评论</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- 首页分类侧边栏页 -->
         <div class="siderbar siderbar-category">
             <div class="container">
@@ -268,30 +293,6 @@
                 </div>
             </div>
         </div>
-        <!-- 导航菜单 -->
-        <div class="nav-menu">
-            <div class="container">
-                <div class="nav-menu-list swiper-container">
-                    <ul class="nav-menu-container swiper-wrapper">
-                        <li class="nav-menu-item nav-active-menu swiper-slide"><a href="javascript:;">首页</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">在线旅游</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">酒店</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">航空公司</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">出入境及目的地</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">投资并购</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销系统</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">商务及奖励旅游</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">邮轮</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">租车</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">机场管理</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">高铁</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">推荐</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <!-- banner -->
         <div class="banner">
             <div class="container">     
@@ -504,9 +505,10 @@
                     30,000+ 旅游业精英每周必读的行业要闻精粹，每周二发至您的邮箱
                 </p>
                 <div class="subscribe-input-container">
-                    <input type="text" class="subscribe-input" placeholder="请输入您的邮件">
+                    <input type="text" class="subscribe-input" placeholder="请输入您的邮箱地址">
+                    <div class="tips-container">您的邮箱格式不正确，请检查</div>
                 </div>
-                <div class="subscribe-btn">订阅邮件</div>
+                <div class="subscribe-btn" id="subscribeBtn">订阅邮件</div>
             </div>
         </div>
         <!-- footer -->
@@ -517,9 +519,9 @@
                 </div>
                 <div class="footer-info">
                     <div class="footer-links">
-                        <a class="footer-link" href="" target="_blank">关于我们<b></b></a>
-                        <a class="footer-link" href="" target="_blank">加入我们<b></b></a>
-                        <a class="footer-link" href="" target="_blank">联系我们</a>
+                        <a class="footer-link" href="about.html" target="_blank">关于我们<b></b></a>
+                        <a class="footer-link" href="join.html" target="_blank">加入我们<b></b></a>
+                        <a class="footer-link" href="contact.html" target="_blank">联系我们</a>
                     </div>
                     <p>©2006-2017 环球旅讯版权所有</p>
                 </div>
@@ -554,9 +556,23 @@
 
     <script src="http://img.traveldaily.cn/script/jquery.js"></script>
     <script src="http://img.traveldaily.cn/script/plugins/swiper/swiper.min.js"></script>
-    <script src="js/index.js"></script>
+    <!--<script src="js/index.js"></script>-->
     <script>
-        window.onload = function () {
+        $(document).ready(function () {
+            function switchSiderbar (targetEle, cancelEle, classType) {
+                $(targetEle).addClass(classType);
+                $(cancelEle).bind("click", function () {
+                    $(targetEle).removeClass(classType);
+                })
+            }
+            // 汉堡菜单和搜索的侧边栏切换
+            $(".hamburger-menu").on("click", function () {
+                switchSiderbar(".siderbar-category", ".close-container", "siderbar-category-active");
+            });
+            $(".header-search").on("click", function () {
+                switchSiderbar(".siderbar-search", ".search-arrow, .search-cancel", "siderbar-search-active");
+            });
+
             var bannerMenu = new Swiper(".nav-menu-list", {
                 initialSlide: 0,
                 spaceBetween: 10,
@@ -569,6 +585,63 @@
                 // width: "auto",
                 slidesPerView: "1.6"
             });
-        }
+
+            $(document).on("touchstart", function (event) {
+                var event = window.event || event;
+                var initX = event.targetTouches[0].clientX,
+                    initY = event.targetTouches[0].clientY;
+                $(document).on("touchmove", function (event) {
+                    var event = window.event || event;
+                    var moveX = event.targetTouches[0].clientX,
+                        moveY = event.targetTouches[0].clientY;
+
+                    var navs = $("nav, .footer-nav-container"),
+                        footer = $(".footer");
+                    var x = moveX - initX,
+                        y = moveY - initY;
+                    if (y > 0) {
+                        navs.css("display", "block");
+                    } else {
+                        footer.css("margin-bottom", "0");
+                        navs.css("display", "none");
+                    }
+                })
+            });
+
+            var subscribeInput = $(".subscribe-input"),
+                tipsContainer = $(".tips-container");
+            $("#subscribeBtn").on("click", function () {
+                if (subscribeInput.val() == "") {
+                    subscribeInput.focus();
+                    tipsContainer.text("请输入您的邮箱地址").css({
+                        "color": "#f00",
+                        "opacity": 1
+                    }).animate({
+                        "opacity": 0
+                    }, 3000);
+                    return false;
+                } else if (!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test( subscribeInput.val() )) {
+                    subscribeInput.focus();
+                    tipsContainer.text("您的邮箱格式不正确，请检查").css({
+                        "color": "#f00",
+                        "opacity": 1
+                    }).animate({
+                        "opacity": 0
+                    }, 3000);
+                    return false;
+                }
+            });
+
+            $(".nav-menu-item").on("click", function () {
+                switchMenu($(this), "nav-active-menu");
+            });
+
+            $(".footer-nav-item").on("click", function () {
+                switchMenu($(this), "footer-nav-active");
+            })
+            function switchMenu (targetEle, classType) {
+                targetEle.addClass(classType).siblings().removeClass(classType);
+            }
+        })
     </script>
 </html>
