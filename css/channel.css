@@ -1,0 +1,211 @@
+/*** 顶部 ***/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #006395;
+    z-index: 10;
+}
+.hamburger-menu {
+    width: 32px;
+    height: 23px;
+    margin-top: 13.5px;
+    position: relative;
+}
+.hamburger-item {
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.hamburger-middle {
+    top: 10px;
+    left: 0;
+}
+.hamburger-bottom {
+    top: 20px;
+    left: 0;
+}
+.site-name {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-weight: normal;
+}
+.header-search {
+    width: 25px;
+    height: 30px;
+    margin-top: 10px;
+    background: url(img/search.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+/*** 导航菜单 ***/
+.nav-menu { margin: 50px 0 0; }
+.nav-menu-container {
+    display: flex;
+    margin: 10px 0 0 !important;
+}
+.nav-menu-item {
+    width: auto;
+    padding: 0 5px 10px;
+    margin: 0 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.nav-menu-item > a { color: #666; }
+.nav-active-menu {
+    border-bottom: 1px solid #006395;
+}
+
+/*** 主体内容 ***/
+.main {
+    /*margin-top: 30px;*/
+}
+.channel-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #E4E4E4;
+}
+.channel-item:last-child {
+    border-bottom: 0;
+}
+.channel-title {
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.channel-title > a {
+    color: #333;
+}
+.times {
+    box-sizing: border-box;
+    padding-left: 30px;
+    background-image: url(img/time.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    color: #757373;
+    margin-bottom: 10px;
+}
+.channel-intro {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #757373;
+    line-height: 25px;
+}
+.more-channel-btn {
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #006395;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px 0 50px;
+}
+.more-channel-btn:active {
+    background-color: #D1D1D1;
+}
+
+/*** footer ***/
+.footer {
+    padding: 50px 0;
+    background-color: #414141;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.footer-logo {
+    display: inline-block;
+    width: 110px;
+}
+.footer-info {
+    margin: 30px 0 0;
+}
+.footer-link {
+    color: #C5C5C5;
+    padding: 5px 0;
+}
+.footer-link:active {
+    color: #646363;
+}
+.footer-link b {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #C5C5C5;
+    margin: 0 5px 0 10px;
+    vertical-align: middle;
+}
+.footer-info > p {
+    color: #8B8B8B;
+    margin-top: 5px;
+}
+
+/*** 底部导航 ***/
+.footer-nav-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 10px;
+    height: 60px;
+    z-index: 10;
+    background-color: #fff;
+}
+.footer-nav-container > .container {
+    width: 80%;
+}
+.footer-nav-list {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.footer-nav-item {
+    width: 33.33%;
+    text-align: center;
+}
+.footer-nav-icon {
+    width: 22px;
+    height: 25px;
+    margin: 0 auto 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.footer-nav-itemtext { color: #333; }
+.icon-1 {
+    background-image: url(img/icon-1.png);
+}
+.icon-2 {
+    background-image: url(img/icon-2.png);
+}
+.icon-3 {
+    background-image: url(img/icon-3.png);
+}
+.footer-nav-active .icon-1 {
+    background-image: url(img/icon-1-active.png);
+}
+.footer-nav-active .icon-2 {
+    background-image: url(img/icon-2-active.png);
+}
+.footer-nav-active .icon-3 {
+    background-image: url(img/icon-3-active.png);
+}
+.footer-nav-active .footer-nav-itemtext {
+    color: #006395;
+}
