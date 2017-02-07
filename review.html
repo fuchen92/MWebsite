@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge, chrome=1">
-        <title>评论</title>
+        <title>评论页</title>
         <link rel="stylesheet" href="css/basic.css">
         <link rel="stylesheet" href="css/review.css">
     </head>
@@ -19,7 +19,9 @@
                     <div class="hamburger-item hamburger-bottom"></div>
                 </div>
                 <div class="header-search rt"></div>
-                <h3 class="site-name">环球旅讯</h3>
+                <h3 class="site-name">
+                    <img class="site-logo" src="css/img/site-logo.png">
+                </h3>
             </div>
         </nav>
         <!-- 导航菜单 -->
@@ -164,7 +166,7 @@
             </div>
         </div>
         <!-- 底部导航 -->
-        <div class="footer-nav-container">
+        <!--<div class="footer-nav-container">
             <div class="container">
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item lt footer-nav-active">
@@ -187,7 +189,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
     </body>
 
     <script src="http://img.traveldaily.cn/script/jquery.js"></script>
@@ -197,9 +199,20 @@
             var bannerMenu = new Swiper(".nav-menu-list", {
                 initialSlide: 0,
                 spaceBetween: 10,
-                slidesPerView: "auto"
-                // freeMode: true
+                slidesPerView: "auto",
+                freeMode: true
             });
+
+            $(".nav-menu-item").on("click", function () {
+                switchMenu($(this), "nav-active-menu");
+            });
+
+            $(".footer-nav-item").on("click", function () {
+                switchMenu($(this), "footer-nav-active");
+            })
+            function switchMenu (targetEle, classType) {
+                targetEle.addClass(classType).siblings().removeClass(classType);
+            }
         }
     </script>
 </html>

@@ -20,7 +20,9 @@
                     <div class="hamburger-item hamburger-bottom"></div>
                 </div>
                 <div class="header-search rt"></div>
-                <h3 class="site-name">环球旅讯</h3>
+                <h3 class="site-name">
+                    <img class="site-logo" src="css/img/site-logo.png">
+                </h3>
             </div>
         </nav>
         <!-- 导航菜单 -->
@@ -33,9 +35,9 @@
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">酒店</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">航空公司</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">出入境及目的地</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
-                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">投资并购</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销商</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游科技</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">旅游分销系统</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">商务及奖励旅游</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">邮轮</a></li>
@@ -44,6 +46,9 @@
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">高铁</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">推荐</a></li>
                         <li class="nav-menu-item swiper-slide"><a href="javascript:;">评论</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">译讯</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">创业</a></li>
+                        <li class="nav-menu-item swiper-slide"><a href="javascript:;">精选</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +63,7 @@
                         <div class="category-group">
                             <div class="category-item lt">
                                 <a href="" target="_blank">
-                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1e.png);"></span>
+                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1a.png);"></span>
                                     <span class="category-name">编辑精选</span>
                                 </a>
                             </div>
@@ -72,13 +77,13 @@
                         <div class="category-group">
                             <div class="category-item lt">
                                 <a href="" target="_blank">
-                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1a.png);"></span>
+                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1c.png);"></span>
                                     <span class="category-name">评论</span>
                                 </a>
                             </div>
                             <div class="category-item lt">
                                 <a href="" target="_blank">
-                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1c.png);"></span>
+                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1d.png);"></span>
                                     <span class="category-name">精选</span>
                                 </a>
                             </div>
@@ -86,7 +91,7 @@
                         <div class="category-group">
                             <div class="category-item lt only-contain-one">
                                 <a href="" target="_blank">
-                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1d.png);"></span>
+                                    <span class="category-icon" style="background-image: url(css/img/icons/icon-1e.png);"></span>
                                     <span class="category-name">创业</span>
                                 </a>
                             </div>
@@ -270,7 +275,7 @@
                 <div class="search-bar">
                     <div class="search-arrow"></div>
                     <div class="search-input-container">
-                        <input type="text" class="search-input" placeholder="请输入关键字">
+                        <input type="text" class="search-input" id="searchInput" placeholder="请输入关键字">
                     </div>
                     <div class="search-cancel">取消</div>
                 </div>
@@ -323,11 +328,71 @@
             <div class="container">
                 <div class="news-list-container">
                     <div class="news-list-category">
-                        <h3 class="news-category-title lt">编辑推荐</h3>
-                        <p class="more-news rt">更多>></p>
+                        <h3 class="news-category-title lt">
+                            <a href="">编辑推荐</a>
+                        </h3>
+                        <p class="more-news rt">
+                            <a href="">更多>></a>
+                        </p>
                     </div>
-                    <div class="carousel swiper-container">
+                    <div class="carousel swiper-container carousel-one">
                         <ul class="swiper-wrapper">
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-1.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>                                
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-2.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-3.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-4.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-1.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>                                
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-2.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-3.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-4.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                                <p class="news-img-intro">2017-1-12</p>
+                            </li>
                             <li class="swiper-slide carousel-item">
                                 <div class="news-img-container">
                                     <img src="css/img/news-1.jpg">
@@ -360,7 +425,12 @@
                     </div>
                     <div class="news-item-container">
                         <div class="news-list-category">
-                            <h3 class="news-category-title lt">最新资讯</h3>
+                            <h3 class="news-category-title lt">
+                                <a href="">最新资讯</a>
+                            </h3>
+                            <p class="more-news rt">
+                                <a href="">更多>></a>
+                            </p>
                         </div>
                         <div class="news-item">
                             <h4 class="news-title"><a href="">趣旅融资4000万美元 深度切入海岛游地接服务</a></h4>
@@ -408,11 +478,63 @@
                 </div>
                 <div class="news-list-container">
                     <div class="news-list-category">
-                        <h3 class="news-category-title lt">近期活动</h3>
-                        <!--<p class="more-news rt">更多>></p>-->
+                        <h3 class="news-category-title lt">
+                            <a href="">近期活动</a>
+                        </h3>
+                        <p class="more-news rt">
+                            <a href="">更多>></a>
+                        </p>
                     </div>
-                    <div class="carousel swiper-container">
+                    <div class="carousel swiper-container carousel-two">
                         <ul class="swiper-wrapper">
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-1.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-2.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-3.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-4.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-1.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-2.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-3.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
+                            <li class="swiper-slide carousel-item">
+                                <div class="news-img-container">
+                                    <img src="css/img/news-4.jpg">
+                                </div>
+                                <p class="news-img-intro"><a href="">礼宾服务 App Haptik 完成B轮融资</a></p>
+                            </li>
                             <li class="swiper-slide carousel-item">
                                 <div class="news-img-container">
                                     <img src="css/img/news-1.jpg">
@@ -439,7 +561,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="news-item-container">
+                    <div class="news-item-container more-news-container">
                         <!--<div class="news-list-category">
                             <h3 class="news-category-title lt">最新资讯</h3>
                         </div>-->
@@ -528,7 +650,7 @@
             </div>
         </div>
         <!-- 底部导航 -->
-        <div class="footer-nav-container">
+        <!--<div class="footer-nav-container">
             <div class="container">
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item lt footer-nav-active">
@@ -551,13 +673,13 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>-->
     </body>
 
     <script src="http://img.traveldaily.cn/script/jquery.js"></script>
     <script src="http://img.traveldaily.cn/script/plugins/swiper/swiper.min.js"></script>
-    <!--<script src="js/index.js"></script>-->
-    <script>
+    <script src="js/index.js"></script>
+    <!--<script>
         $(document).ready(function () {
             function switchSiderbar (targetEle, cancelEle, classType) {
                 $(targetEle).addClass(classType);
@@ -571,65 +693,102 @@
             });
             $(".header-search").on("click", function () {
                 switchSiderbar(".siderbar-search", ".search-arrow, .search-cancel", "siderbar-search-active");
+                $("#searchInput").focus();
             });
 
-            var bannerMenu = new Swiper(".nav-menu-list", {
-                initialSlide: 0,
+            var navMenu = new Swiper(".nav-menu-list", {
                 spaceBetween: 10,
-                slidesPerView: "auto"
-                // freeMode: true
+                slidesPerView: "auto",
+                freeMode: true
             });
 
-            var carousel = new Swiper(".carousel", {
+            
+            var carousel1 = new Swiper(".carousel-one", {
                 spaceBetween: 20,
                 // width: "auto",
-                slidesPerView: "1.6"
-            });
-
-            $(document).on("touchstart", function (event) {
-                var event = window.event || event;
-                var initX = event.targetTouches[0].clientX,
-                    initY = event.targetTouches[0].clientY;
-                $(document).on("touchmove", function (event) {
-                    var event = window.event || event;
-                    var moveX = event.targetTouches[0].clientX,
-                        moveY = event.targetTouches[0].clientY;
-
-                    var navs = $("nav, .footer-nav-container"),
-                        footer = $(".footer");
-                    var x = moveX - initX,
-                        y = moveY - initY;
-                    if (y > 0) {
-                        navs.css("display", "block");
-                    } else {
-                        footer.css("margin-bottom", "0");
-                        navs.css("display", "none");
+                slidesPerView: "1.6",
+                onSlideChangeEnd: function(swiper){
+                    var currentIndex = swiper.activeIndex;
+                    var carouselItem = $(".carousel-one .carousel-item")
+                    // // console.log(currentIndex) //切换结束时，告诉我现在是第几个slide
+                    if (currentIndex >= carouselItem.length - 2 ) {
+                        console.log("到底了")
                     }
-                })
+                    // console.log(swiper);
+                    // if (swiper.isEnd) {
+                    //     console.log("已经到最后了")
+                    // }
+                }
             });
+
+            // $(".news-category-title").on("click", function () {
+            //     console.log(carousel.activeIndex)
+            // });
+            // var swiperWrapper = $(".swiper-wrapper");
+            // var moveWidth = $(".carousel-item").width() + 15;
+            // var num = 0;
+            // var initX = 0;
+            // $(".carousel").on("touchstart", function (event) {
+            //     var event = window.event || event;
+            //     event.stopPropagation();
+            //     initX = event.touches[0].pageX;
+            //     num++;
+            // });
+
+            // $(".carousel").on("touchmove", function (event) {
+            //     console.log(num)
+            //     var event = window.event || event;
+            //     event.preventDefault();
+            //     var moveX = event.touches[0].pageX;
+            //     var x = moveX - initX;
+            //     if (x < 0) {
+            //         console.log(num)
+            //         swiperWrapper.animate({
+            //             "left": -moveWidth * num
+            //         }, 200)
+            //     }
+            // });
+            // $(".carousel").on("touchend", function (event) {
+            //     var event = window.event || event;
+            //     // alert(111)
+            // });
+
+            // $(document).on("touchstart", function (event) {
+            //     var event = window.event || event;
+            //     var initX = event.touches[0].clientX,
+            //         initY = event.touches[0].clientY;
+            //     $(document).on("touchmove", function (event) {
+            //         var event = window.event || event;
+            //         var moveX = event.touches[0].clientX,
+            //             moveY = event.touches[0].clientY;
+
+            //         var navs = $("nav, .footer-nav-container"),
+            //             footer = $(".footer");
+            //         var x = moveX - initX,
+            //             y = moveY - initY;
+            //         if (y > 0) {
+            //             navs.css("display", "block");
+            //         } else {
+            //             footer.css("margin-bottom", "0");
+            //             navs.css("display", "none");
+            //         }
+            //     })
+            // });
 
             var subscribeInput = $(".subscribe-input"),
                 tipsContainer = $(".tips-container");
             $("#subscribeBtn").on("click", function () {
                 if (subscribeInput.val() == "") {
                     subscribeInput.focus();
-                    tipsContainer.text("请输入您的邮箱地址").css({
-                        "color": "#f00",
-                        "opacity": 1
-                    }).animate({
-                        "opacity": 0
-                    }, 3000);
+                    tipsContainer.text("请输入您的邮箱地址").addClass("tips-container-active");
                     return false;
                 } else if (!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test( subscribeInput.val() )) {
                     subscribeInput.focus();
-                    tipsContainer.text("您的邮箱格式不正确，请检查").css({
-                        "color": "#f00",
-                        "opacity": 1
-                    }).animate({
-                        "opacity": 0
-                    }, 3000);
-                    return false;
+                    tipsContainer.text("您的邮箱格式不正确，请检查").addClass("tips-container-active");
                 }
+            });
+            subscribeInput.on("blur", function () {
+                tipsContainer.removeClass("tips-container-active");
             });
 
             $(".nav-menu-item").on("click", function () {
@@ -643,5 +802,5 @@
                 targetEle.addClass(classType).siblings().removeClass(classType);
             }
         })
-    </script>
+    </script>-->
 </html>
