@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>【七空幻音】移动端Touch触摸事件</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        *{
+            margin:0;padding:0;
+        }
+        #main{
+            background:black;
+            width:200px;
+            height:200px;
+            left:200px;
+            position:absolute;
+            color:#fff;
+        }
+        #log{width:150px;}
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <ul id="log"></ul>
+    <script>
+        var oDiv = document.getElementById("main");//获取目标元素
+        var log = document.getElementById("log");//触发日志
+
+        oDiv.addEventListener("touchmove", function(e) {//添加监听移动监听事件
+            e.preventDefault();//首先把浏览器的默认事件阻止了
+            if (e.targetTouches.length == 1) {//判断是否是一根手指来移动
+                var touch = e.targetTouches[0];//获取第一根手指
+                oDiv.style.left = touch.pageX-50 + 'px';//设置距离左侧的距离和偏移量
+                oDiv.style.top = touch.pageY-50 + 'px';//设置距离上方的距离和偏移量
+              }
+         }, false);
+        //触摸屏幕事件
+        oDiv.addEventListener("touchstart",function(){//添加触摸事件
+            var li = document.createElement("li");
+            li.innerText = "已触摸屏幕";//输出一下事件触发
+            li.style.color="green";
+            log.appendChild(li);
+        },false);
+
+        oDiv.addEventListener("touchend",function(){//添加松开事件
+            var li = document.createElement("li");
+            li.innerText = "已离开屏幕";//输出一下事件触发
+            li.style.color="#666";
+            log.appendChild(li);
+        },false)
+    </script>
+</body>
+</html>
