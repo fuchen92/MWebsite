@@ -1,29 +1,4 @@
 /*** 顶部 ***/
-.header-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #006395;
-    z-index: 15;
-}
-.header-arrow {
-    width: 15px;
-    height: 20px;
-    margin-top: 15px;
-    background-image: url(img/search-arrow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.site-name {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    line-height: 50px;
-    font-weight: normal;
-}
 
 /*** banner ***/
 .banner {
@@ -49,6 +24,7 @@
     box-sizing: border-box;
     color: #DDE2EC;
     line-height: 25px;
+    text-align: center;
 }
 
 /*** 提供 ***/
@@ -59,10 +35,15 @@
 }
 .provide-title {
     margin-bottom: 15px;
+    color: #252525;
 }
 .provide-description {
     line-height: 25px;
     margin-bottom: 10px;
+    color: #666666;
+}
+.tel-email {
+    color: #666666;
 }
 .email-link {
     color: #006395;
@@ -86,7 +67,7 @@
     font-size: 22px;
 }
 .divide-line {
-    width: 60px;
+    width: 75px;
     height: 2px;
     background-color: #fff;
 }
@@ -97,93 +78,4 @@
     padding-left: 35px;
     background: url(img/addr.png) left top 8px no-repeat;
     background-size: 22px;
-}
-
-/*** footer ***/
-.footer {
-    padding: 50px 0;
-    background-color: #414141;
-    text-align: center;
-    margin-bottom: 60px;
-}
-.footer-logo {
-    display: inline-block;
-    width: 110px;
-}
-.footer-info {
-    margin: 30px 0 0;
-}
-.footer-link {
-    color: #C5C5C5;
-    padding: 5px 0;
-}
-.footer-link:active {
-    color: #646363;
-}
-.footer-link b {
-    display: inline-block;
-    width: 1px;
-    height: 14px;
-    background-color: #C5C5C5;
-    margin: 0 5px 0 10px;
-    vertical-align: middle;
-}
-.footer-info > p {
-    color: #8B8B8B;
-    margin-top: 5px;
-}
-
-/*** 底部导航 ***/
-.footer-nav-container {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    box-sizing: border-box;
-    width: 100%;
-    padding-top: 10px;
-    height: 60px;
-    z-index: 10;
-    background-color: #fff;
-}
-.footer-nav-container > .container {
-    width: 80%;
-}
-.footer-nav-list {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-.footer-nav-item {
-    width: 33.33%;
-    text-align: center;
-}
-.footer-nav-icon {
-    width: 22px;
-    height: 25px;
-    margin: 0 auto 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-.footer-nav-itemtext { color: #333; }
-.icon-1 {
-    background-image: url(img/icon-1.png);
-}
-.icon-2 {
-    background-image: url(img/icon-2.png);
-}
-.icon-3 {
-    background-image: url(img/icon-3.png);
-}
-.footer-nav-active .icon-1 {
-    background-image: url(img/icon-1-active.png);
-}
-.footer-nav-active .icon-2 {
-    background-image: url(img/icon-2-active.png);
-}
-.footer-nav-active .icon-3 {
-    background-image: url(img/icon-3-active.png);
-}
-.footer-nav-active .footer-nav-itemtext {
-    color: #006395;
 }

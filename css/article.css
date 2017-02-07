@@ -1,29 +1,4 @@
 /*** 顶部 ***/
-.header-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #006395;
-    z-index: 15;
-}
-.header-arrow {
-    width: 15px;
-    height: 20px;
-    margin-top: 15px;
-    background-image: url(img/search-arrow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.site-name {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    line-height: 50px;
-    font-weight: normal;
-}
 
 /*** 主体内容 ***/
 .main {
@@ -31,7 +6,7 @@
 }
 .article-title {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -41,7 +16,7 @@
 .article-from, .article-time, .article-language {
     display: inline-block;
     vertical-align: middle;
-    color: #7F7F7F;
+    color: #999;
     line-height: 20px;
 }
 .article-time { margin: 0 10px; }
@@ -64,15 +39,16 @@
 .article-description {
     margin: 20px 0;
     padding: 20px 10px;
-    border-top: 1px solid #D1D1D1;
-    border-bottom: 1px solid #D1D1D1;
+    border: 1px solid #D1D1D1;
 }
 .article-description-text {
     line-height: 25px;
+    color: #666666;
 }
 .article-detail-intro {
     line-height: 25px;
     margin-bottom: 35px;
+    color: #666666;
 }
 .article-detail-list { overflow: hidden; }
 .article-detail-item {
@@ -82,14 +58,17 @@
     color: #006395;
 }
 .article-detail-chapter {
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 10px;
+    color: #252525;
 }
 .article-chapter-list {
     margin: 0 0 10px;
+    color: #252525;
 }
 .article-chapter-text {
     line-height: 25px;
+    color: #666666;
 }
 .article-detail-presentation {
     margin-top: 35px;
@@ -97,6 +76,7 @@
 .presentation-title {
     text-align: center;
     margin-bottom: 15px;
+    color: #252525;
 }
 table, tr, th, td {
     border: 1px solid #D1D1D1;
@@ -113,12 +93,13 @@ table, tr, th, td {
 }
 .data-from {
     text-align: center;
-    color: #7F7F7F;
+    color: #999999;
     margin-top: 15px;
 }
 .presentation-item {
     line-height: 25px;
     margin-bottom: 35px;
+    color: #666666;
 }
 .quote {
     margin-bottom: 0;
@@ -139,6 +120,7 @@ table, tr, th, td {
     margin: 10px 10px 0 0;
     line-height: 25px;
     color: #000;
+    border-radius: 3px;
 }
 .label-item:active {
     background-color: #006395;
@@ -154,13 +136,13 @@ table, tr, th, td {
     vertical-align: top;
 }
 .photo-container {
-    width: 80px;
+    width: 70px;
 }
 .photo-container > img {
     width: 100%;
 }
 .commentator-info {
-    width: calc(100% - 95px);
+    width: calc(100% - 85px);
     font-size: 14px;
     margin-left: 15px;
 }
@@ -176,7 +158,7 @@ table, tr, th, td {
 .commentator-intro { line-height: 25px; }
 .article-attention {
     margin: 20px 0 0 0;
-    color: #7F7F7F;
+    color: #999999;
     text-align: center;
     line-height: 25px;
 }
@@ -205,11 +187,11 @@ table, tr, th, td {
     vertical-align: top;
 }
 .comment-photo {
-    width: 50px;
+    width: 40px;
 }
 .comment-photo > img { width: 100%; }
 .comment-container {
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
     margin-left: 15px;
 }
 .comment-person {
@@ -297,8 +279,9 @@ table, tr, th, td {
 }
 .interest-article {
     top: 0;
+    font-weight: normal;
 }
-.interest-article > a { color: #000; }
+.interest-article > a { color: #252525; }
 .interest-article > a:active { color: #006395; }
 .keywords-container {
     bottom: 0;
@@ -306,6 +289,7 @@ table, tr, th, td {
 .keywords, .interest-time {
     display: inline-block;
     vertical-align: middle;
+    font-size: 13px;
 }
 .keywords > b {
     display: inline-block;
@@ -316,12 +300,12 @@ table, tr, th, td {
     margin: 0 10px 0 15px;
 }
 .interest-time {
-    padding-left: 30px;
+    padding-left: 22px;
     background-image: url(img/interest-time.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-    color: #7F7F7F; 
+    color: #999999; 
 }
 .interest-list:last-child {
     margin-bottom: 0;
@@ -339,7 +323,7 @@ table, tr, th, td {
     line-height: 29px;
 }
 .footer-input-wrapper {
-    width: 60%;
+    width: 80%;
 }
 .footer-input {
     width: 100%;
@@ -347,18 +331,16 @@ table, tr, th, td {
     box-sizing: border-box;
     border: 1px solid #006395;
     border-radius: 5px;
-    padding: 5px 0 5px 30px;
-    background-image: url(img/pen.png);
-    background-position: left 5px center;
-    background-repeat: no-repeat;
-    background-size: 18px;
+    padding: 5px 0 5px 5px;
+    /*background-image: url(img/pen.png);*/
+    /*background-position: left 5px center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 18px;*/
     resize: none;
 }
-.footer-input-container .share {
-    background-image: url(img/share.png);
-    background-size: 23px;
-    margin-right: 0;
-}
-.footer-input-container .share-active {
-    background-image: url(img/share-active.png);
+.publish-btn {
+    width: 50px;
+    text-align: center;
+    color: #006395;
+    line-height: 30px;
 }
